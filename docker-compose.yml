@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mslearncontentfeed:
+    image: ${DOCKER_REGISTRY-}mslearncontentfeed
+    build:
+      context: .
+      dockerfile: src/Dockerfile
