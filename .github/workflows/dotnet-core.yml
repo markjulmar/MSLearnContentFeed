@@ -24,9 +24,6 @@ jobs:
     - name: Test
       working-directory: ./src
       run: dotnet test --no-restore --verbosity normal
-    - name: Pack
-      working-directory: ./src
-      run: dotnet pack MSLearnCatalogAPI.csproj --output nuget-packages --configuration Release
     - name: Publish to Azure
       working-directory: ./src
       run: msbuild /p:DeployOnBuild=True /p:PublishProfile="Properties/PublishProfiles/mslearn-contentfeed - Web Deploy.pubxml" /p:Configuration=Release /p:password=${{ secrets.WEB_PUBLISH_KEY }}
