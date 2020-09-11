@@ -19,6 +19,6 @@
     
   <ItemGroup>
     <PackageReference Include="System.ServiceModel.Syndication" Version="4.7.0" />
-    <PackageReference Include="Julmar.MSLearnCatalogAPI" Version="1.0.0" />
+    <PackageReference Include="Julmar.MSLearnCatalogAPI" Version="1.1.0" />
   </ItemGroup>
 </Project>
