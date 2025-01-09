@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet src/MSLearnContentFeed.csproj restore
+      run: dotnet restore src/MSLearnContentFeed.csproj
     - name: Build
       run: dotnet build src/MSLearnContentFeed.csproj --no-restore
     - name: Test
